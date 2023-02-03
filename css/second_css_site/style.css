@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fffafa;
+  --data-color: #008080;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.post-container {
+  padding: 50px;
+  margin: 0 auto;
+  width: 70%;
+  background: var(--bg-color);
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
+.date {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--data-color);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}

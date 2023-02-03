@@ -1,0 +1,36 @@
+:root {
+  --amarelo: #f1c40f;
+  --azul: #2c3e50;
+  --vermelho: #e74c3c;
+}
+
+body {
+  background: var(--azul);
+  font-family: sans-serif;
+  padding: 10%;
+}
+
+h1 {
+  color: #fff;
+}
+
+h3 {
+  color: var(--amarelo);
+}
+
+#days-of-week ul {
+  color: white;
+}
+
+#activities h2 {
+  background: var(--amarelo);
+  border: 2px solid;
+}
+
+#activities ul {
+  color: #fff;
+}
+
+#astronomy-class {
+  color: #e74c3c;
+}

@@ -1,0 +1,19 @@
+* {
+  color: red;
+}
+
+li a {
+  background-color: blue;
+}
+
+h1 + h4 {
+  background-color: aqua;
+}
+
+a[href="/recibo"] {
+  color: 1px dashed black;
+}
+
+li:nth-of-type(2) {
+  color: cadetblue;
+}

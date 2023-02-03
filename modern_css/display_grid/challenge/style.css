@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: darkgray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 1em;
+}
+
+.item {
+  background: #fff;
+  border: 1px solid;
+  padding: 1px;
+  font-size: 1.2em;
+}
