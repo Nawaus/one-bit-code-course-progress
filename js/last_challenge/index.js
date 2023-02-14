@@ -1,100 +1,84 @@
-const openings = [
-  {
-    vacant: 1,
-    names: [
-      "Miguel",
-      "Davi",
-      "Pedro",
-      "Ana Clara",
-      "Lucas",
-      "Matheus",
-      "Heitor",
-    ],
-    amount: 193,
-  },
-  {
-    vacant: 2,
-    names: [
-      "Miguel",
-      "Davi",
-      "Pedro",
-      "Ana Clara",
-      "Lucas",
-      "Matheus",
-      "Heitor",
-    ],
-    amount: 133,
-  },
-  {
-    vacant: 3,
-    names: [
-      "Miguel",
-      "Davi",
-      "Pedro",
-      "Giovanna",
-      "Lucas",
-      "Matheus",
-      "Heitor",
-    ],
-    amount: 333,
-  },
-];
+const vagas = [];
 
-let ask = "";
-while (ask !== "6") {
-  alert(`
-  1 - Listar vagas disponíveis
-  2 - Criar um nova vaga
-  3 - Visualizar uma vaga
-  4 - Inscrever um candidato em uma vaga
-  5 - Excluir uma vaga
-  6 - Sair`);
-  ask = prompt("Qual opção você deseja?");
-  if (ask === "1") {
-    let names = openings.map((element, i) => {
-      return ` Na vaga ${i + 1} tem ${
-        element.amount
-      } canditados e os nomes dos canditados são: ${element.names} \n \n`;
-    });
-    alert(names);
-  } else if (ask === "2") {
-    let obj = {
-      // names: prompt("Qual é o nome da vaga?"),
-      getName: prompt("Qual é o nome da vaga?"),
-      // amount: prompt("Qual é a descrição?"),
-      getDescription: prompt("Qual é a descrição?"),
-      getDataLimit: prompt("Qual é tempo limite da vaga?"),
-    };
-    showInfos = obj.map((element, i) => {
-      return `${element.getName}`;
-    });
-    alert(obj);
-    openings.push(obj);
-    // let getName = prompt("Qual é o nome da vaga?");
-    // let getDescription = prompt("Qual é a descrição?");
-    // let getDataLimit = prompt("Qual é tempo limite da vaga?");
-    // let obj = [
-    //   {
-    //     getName,
-    //     getDescription,
-    //     getDataLimit,
-    //   },
-    // ];
+function listarVagas() {
+  const vagasEmTexto = vagas.reduce((textoFinal, vaga, indice) => {
+    textoFinal += ". ";
+    textoFinal += vaga.nome;
+    textoFinal += " (" + vaga.canditados.length + "canditados\n";
+    return textoFinal;
+  }, "");
+  alert(vagasEmTexto);
+}
+
+function criarNovaVaga() {
+  const nome = prompt("Insira um nome para vaga:");
+  const descricao = prompt("Insira uma descrição para a vaga:");
+  const dataLimite = prompt("Informe uma data limite (dd/mm/aaaa)");
+
+  const confirmacao = confirm(`
+  Deseja criar uma vaga com esssas informações?\n
+  "Nome:" ${nome} "\n Descrição: " ${descricao} \n Data limite: ${dataLimite}
+  `);
+
+  if (confirmacao) {
+    const novaVaga = { nome, descricao, dataLimite, canditados: [] };
+    vagas.push(novaVaga);
+    alert("Vaga criada.");
   }
 }
 
-// // function createPlace(
-// //   getName = prompt("Qual é o nome da vaga?"),
-// //   getDescription = prompt("Qual é a descrição?"),
-// //   getDataLimit = prompt("Qual é tempo limite da vaga?"),
-// //   comfirm = comfirm("Você confirma essas informações?")
-// // ) {
-// //   if (comfirm === true) {
-// //     console.log("ola");
-// //   }
-// // }
+function exibirVaga() {
+  const indice = prompt("Informe a vaga que deseja exibir:");
+  const vaga = vagas[indice];
 
-// // let name = confirm("SIM?");
-// // if (name === true) {
-// //   console.log("2");
-// // }
+  const canditadosEmTexto = vaga.canditados.reduce((textoFinal, canditados) => {
+    return textoFinal + "\n - " + canditados;
+  }, "");
+
+  alert(
+    "vaga n° " +
+      indice +
+      "\nNome" +
+      vaga.nome +
+      "\n Descrição:" +
+      "\nData limite:" +
+      vaga.dataLimite +
+      "\nQuantidade de canditados" +
+      vaga.canditados.length +
+      "\n canditados inscritos:" +
+      canditadosEmTexto
+  );
+}
+
+function inscreverCanditado() {
+  const canditado = prompt("Informe o do(a) canditado(a):");
+  const indice = prompt(
+    "Ifnorme uma vaga que o canditado(a) desejar se inscrever"
+  );
+  const confirmacao = confirm(
+    "Desja inscrever o canditado" +
+      canditado +
+      " na vaga " +
+      indice +
+      "?\n" +
+      "Nome: " +
+      vaga.nome +
+      "\n Descrição" +
+      vaga.descricao +
+      "\nData limite: " +
+      vaga.dataLimite
+  );
+
+  if (confirmacao) {
+    vaga.canditados.push(canditado);
+    alert("INcrição realizada");
+  }
+}
+
+function excluirVaga() {
+  const indice = prompt();
+}
+
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+}

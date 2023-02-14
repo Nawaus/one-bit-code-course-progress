@@ -2,13 +2,13 @@ let ask = "";
 
 while (ask !== "6") {
   alert(`
-Calcular área do triângulo 1
-Calcular área do retângulo 2
-Calcular área do quadrado 3
-Calcular área do trapézio 4
-Calcular área do círculo 5
-Sair 6
-`);
+                                  Calcular área do triângulo 1
+                                  Calcular área do retângulo 2
+                                  Calcular área do quadrado 3
+                                  Calcular área do trapézio 4
+                                  Calcular área do círculo 5
+                                  Sair 6
+                                  `);
   ask = prompt("Qual você deseja?");
   if (ask === "1") {
     const base = parseFloat(prompt("Digite a base"));

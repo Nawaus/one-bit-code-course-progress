@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcolo costo prodotto al grammo</title>
+</head>
+<body>
+	<h2>Calcolo costo prodotto al grammo</h2>
+	<form>
+		<label for="totale">Totale speso:</label>
+		<input type="number" id="totale" name="totale"><br>
+
+		<label for="utenti">Numero di utenti:</label>
+		<input type="number" id="utenti" name="utenti"><br>
+
+		<label for="quantita">Quantità di prodotto (in grammi):</label>
+		<input type="number" id="quantita" name="quantita"><br>
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Utente</th>
+				<th>Quantità in euro</th>
+				<th>Quantità in grammi</th>
+			</tr>
+		</thead>
+		<tbody id="tabella-utenti">
+			<!-- Qui verranno aggiunti i campi input per gli utenti -->
+		</tbody>
+	</table>
+
+	<button onclick="calcolaQuantita()">Calcola quantità</button>
+
+	<script>
+		function calcolaQuantita() {
+			const totale = document.getElementById("totale").value;
+			const utenti = document.getElementById("utenti").value;
+			const quantita = document.getElementById("quantita").value;
+			const costoGrammo = totale / quantita;
+
+			const tabellaUtenti = document.getElementById("tabella-utenti");
+			tabellaUtenti.innerHTML = "";
+
+			for (let i = 1; i <= utenti; i++) {
+				const riga = document.createElement("tr");
+
+				const utenteCella = document.createElement("td");
+				utenteCella.textContent = "Utente " + i;
+				riga.appendChild(utenteCella);
+
+				const quantitaEuroCella = document.createElement("td");
+				const quantitaInput = document.createElement("input");
+				quantitaInput.type = "number";
+				quantitaEuroCella.appendChild(quantitaInput);
+				riga.appendChild(quantitaEuroCella);
+
+				const quantitaGrammiCella = document.createElement("td");
+				riga.appendChild(quantitaGrammiCella);
+
+				tabellaUtenti.appendChild(riga);
+			}
+
+			const quantitaEuroInputs = document.querySelectorAll("#tabella-utenti input");
+			quantitaEuroInputs.forEach(input => {
+				input.addEventListener("input", () => {
+					const quantitaEuro = input.value;
+					const quantitaGrammi = quantitaEuro / costoGrammo;
+					const riga = input.parentElement.parentElement;
+					const quantitaGrammiCella = riga.querySelector("td:last-child");
+					quantitaGrammiCella.textContent = quantitaGrammi.toFixed(2);
+				});
+			});
+		}
+	</script>
+</body>
+</html>
