@@ -16,20 +16,20 @@ function addContact() {
 
   const inputNumber = document.createElement("input");
   const numberLabel = document.createElement("label");
-  numberLabel.innerHTML = `<label for="number">Telefone: <label>`;
+  numberLabel.innerHTML = `<label for="">Telefone: <label>`;
   inputNumber.type = "number";
   inputNumber.name = "number";
   inputNumber.id = "number";
   ul.append(numberLabel, inputNumber, document.createElement("br"));
   contactSection.append(ul);
 
-  const inputAdress = document.createElement("input");
+  const inputAddress = document.createElement("input");
   const addresLabel = document.createElement("label");
   addresLabel.innerHTML = `<label for="address">Endereço: <label>`;
-  inputAdress.type = "text";
-  inputAdress.name = "addres";
-  inputAdress.id = "number";
-  ul.append(addresLabel, inputAdress, document.createElement("br"));
+  inputAddress.type = "text";
+  inputAddress.name = "addres";
+  inputAddress.id = "number";
+  ul.append(addresLabel, inputAddress, document.createElement("br"));
   contactSection.append(ul);
 }
 
