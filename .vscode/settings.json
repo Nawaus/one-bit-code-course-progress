@@ -1,6 +1,6 @@
 {
   "prettier.enable": true,
-  "workbench.colorTheme": "Monokai Pro",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
