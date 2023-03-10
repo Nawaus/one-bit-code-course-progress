@@ -1,6 +1,6 @@
 {
   "prettier.enable": true,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Monokai Pro",
   "workbench.iconTheme": "material-icon-theme",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -18,5 +18,17 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.bracketSameLine": true,
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "cSpell.words": [
+    "Adicionar",
+    "Cadastrar",
+    "Completo",
+    "Devs",
+    "essa",
+    "experiência",
+    "linha",
+    "Novos",
+    "tecnologia",
+    "Tecnologias"
+  ]
 }

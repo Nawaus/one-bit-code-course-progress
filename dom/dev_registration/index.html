@@ -7,14 +7,22 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Cadastrar Devs</h1>
-    <form action="" method="get" class="form">
-      <label for="name">Nome completo:</label>
-      <input type="text" name="name" id="name" />
-      <button class="add">Add Tecnologia</button> <br />
+    <form id="devForm">
+      <h1>Cadastrar Novos Devs</h1>
+      <hr />
+      <label for="FullName">Nome Completo:</label>
+      <input type="text" name="FullName" id="FullName" />
+
+      <label>Tecnologias:</label><br />
+      <button type="button" id="addTechBtn">
+        Adicionar uma nova Tecnologia
+      </button>
+      <ul id="stackInputs"></ul>
       <br />
+      <button>Cadastrar</button>
     </form>
 
     <script src="./index.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
