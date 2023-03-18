@@ -50,3 +50,4 @@ if (Golfinho > Coala) {
 } else {
   console.log("Empate");
 }
+

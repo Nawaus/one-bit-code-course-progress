@@ -31,5 +31,15 @@
     "Novos",
     "tecnologia",
     "Tecnologias"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "css.enabledLanguages": [
+    
+    "html"
+  ],
+  "html.format.indentInnerHtml": true,
+  "html.format.templating": true,
+  "eslint.format.enable": true
 }
+
