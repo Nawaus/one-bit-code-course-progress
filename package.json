@@ -1,0 +1,26 @@
+{
+  "name": "rain_world",
+  "version": "1.0.0",
+  "description": "this is my progress doing the one bit code course feel free to look around :D",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nawaus/one-bit-code-course-progress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nawaus/one-bit-code-course-progress/issues"
+  },
+  "homepage": "https://github.com/Nawaus/one-bit-code-course-progress#readme",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  }
+}

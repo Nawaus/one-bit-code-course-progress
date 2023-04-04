@@ -1,5 +1,5 @@
 function group() {
-    console.log("Export nomeado não-inline (agrupado)");
+  console.log("Export nomeado não-inline (agrupado)");
 }
 
 function a() {}
@@ -11,7 +11,7 @@ function c() {}
 function d() {}
 
 function exportDefault() {
-    console.log("Export default não-inline");
+  console.log("Export default não-inline");
 }
 
 export { group, a, b, c, d };
