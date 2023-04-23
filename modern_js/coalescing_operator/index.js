@@ -6,4 +6,4 @@ let c = "Teste";
 
 console.log(a || b || c);
 
-// console.log(a ? ? a);
+console.log(a ?? a);

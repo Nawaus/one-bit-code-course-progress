@@ -1,22 +1,18 @@
 const dayjs = require("dayjs");
 
-const verifyDate = (date) => dayjs(date).isValid();
+function birthday(date) {
+  const birthday = dayjs(date);
+  const today = dayjs();
+  const ageInYears = today.diff(birthday, "year");
+  const nextBirthday = birthday.add(ageInYears + 1, "year");
+  const daysToNextBirthday = nextBirthday.diff(today, "day") + 1;
 
-console.log(verifyDate("2023-11-22"));
+  console.log(`Idade: ${ageInYears}`);
+  console.log(`Próximo aniversário: ${nextBirthday.format("DD/MM/YYYY")}`);
+  console.log(
+    `Dias até completar ${ageInYears + 1} anos: ${daysToNextBirthday}`
+  );
+}
 
-const now = dayjs();
-
-const year = now.year();
-
-// console.log(year - 18);
-
-// console.log(now.format());
-
-const dateBorn = (date) => year - date;
-
-console.log(dateBorn(40));
-
-console.log(now.day());
-
-const a = dayjs("2019-01-25").format("DD/MM/YYYY"); // '25/01/2019'
-console.log(a);
+birthday("1982-01-03");
+birthday("2005-04-26");

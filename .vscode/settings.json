@@ -1,43 +1,53 @@
 {
-  "prettier.enable": true,
-  "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "material-icon-theme",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.fontFamily": "Cascadia Code",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.zoomLevel": 1,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.bracketSameLine": true,
-  "python.analysis.typeCheckingMode": "basic",
-  "cSpell.words": [
-    "Adicionar",
-    "anônima",
-    "Cadastrar",
-    "Completo",
-    "Devs",
-    "essa",
-    "experiência",
-    "linha",
-    "mundo",
-    "Novos",
-    "Subtração",
-    "tecnologia",
-    "Tecnologias"
-  ],
-  "editor.formatOnSave": true,
-  "files.autoSave": "onFocusChange",
-  "css.enabledLanguages": ["html"],
-  "html.format.indentInnerHtml": true,
-  "html.format.templating": true,
-  "eslint.format.enable": true
-}
+  "cSpell.words": ["delorean"]
+} // {
+//     "cSpell.words": [
+//         "fullname"
+//     ]
+// } // {
+//
+// //   "workbench.colorTheme": "Monokai Pro",
+// //   "workbench.iconTheme": "material-icon-theme",
+// //   "[json]": {
+// //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+// //   },
+// //   "editor.fontFamily": "Cascadia Code",
+// //   "[html]": {
+// //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+// //   },
+// //   "[javascript]": {
+// //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+// //   },
+// //   "window.zoomLevel": 1,
+// //   "[css]": {
+// //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+// //   },
+// //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+// //   "prettier.bracketSameLine": true,
+// //   "python.analysis.typeCheckingMode": "basic",
+// //   "cSpell.words": [
+// //     "Adicionar",
+// //     "anônima",
+// //     "Cadastrar",
+// //     "Completo",
+// //     "Devs",
+// //     "Eragon",
+// //     "essa",
+// //     "experiência",
+// //     "fullname",
+// //     "IIFE",
+// //     "linha",
+// //     "mundo",
+// //     "Novos",
+// //     "Paolini",
+// //     "Subtração",
+// //     "tecnologia",
+// //     "Tecnologias"
+// //   ],
+// //   "editor.formatOnSave": false,
+// //   "files.autoSave": "off",
+// //   "css.enabledLanguages": ["html"],
+// //   "html.format.indentInnerHtml": true,
+// //   "html.format.templating": true,
+// //   "eslint.format.enable": true
+// // }
